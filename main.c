@@ -7,11 +7,10 @@ int main(void){
     scanf("%i", &num);
 
     if (num>0)
-     printf("Positive!");
-    else if (num<0)
-     printf("Negative!");
+     printf("Absolute value : %d!\n", num);
+    
     else 
-     printf("Zero!");
+     printf("Absolute value : %d!\n", -num);
 
     return 0;
     
