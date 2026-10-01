@@ -2,17 +2,23 @@
 
 int main(void){
 
-    int num;
-    int sum = 0;
-    int i;
+    int num1, num2;
+    char op;
+    int res;
 
-    printf("Input a number:");
-    scanf("%i", &num);
+    printf("Input a calculation:");
+    scanf("%i%c%i", &num1, &op, &num2);
 
-    for (i = 0; i<num;i++)
-    {
-        sum = sum + i + 1;
-    }
-    
-    printf("The result is %i", sum);
+    if(op == '+')
+     res = num1 + num2;
+    else if (op == '-')
+     res = num1 - num2;
+    else if (op == '*')
+     res = num1 * num2;
+    else if (op == '/')
+     res = num1 / num2;
+
+    printf("= %i\n", res);
+
+    return 0;
 }
